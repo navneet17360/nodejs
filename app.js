@@ -1,17 +1,9 @@
-const http = require("http");
+//npm - global command , comes with node
+//npm --version or npm --v tells npm current version
 
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.end("Welcome to our home page!");
-  } else if (req.url === "/about") {
-    res.end("here is our short history");
-  } else {
-    res.end(
-      `<h1>Oops!</h1>
-        <p>We cant seem to find the page that you are looking for </p>
-        <a href="/"back home></a>`
-    );
-  }
-});
+//local dependency - use it only in this particular project
 
-server.listen(5000);
+//npm install <packageName> - installs the package locally
+//global dependency - use it in any project
+//npm install <packageName> -g - installs the package globally
+//sudo install -g <packageName> (mac)
