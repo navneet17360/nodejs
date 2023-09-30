@@ -17,5 +17,7 @@ const _ = require("lodash");
 
 const items = [1, [2, [3, [4]]]];
 
-const newItems = _.flattenDeep(items);   // its a method used for converting a array of arrays into a single array
+const newItems = _.flattenDeep(items); // its a method used for converting a array of arrays into a single array
 console.log(newItems);
+console.log("hello people");
+
